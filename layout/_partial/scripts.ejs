@@ -78,7 +78,7 @@
 <% } %>
 
 <!-- Netlify Identity Widget -->
-<% if (!is_post()) { %>
+<% if (is_home()) { %>
 	<script>
 	  if (window.netlifyIdentity) {
 	    window.netlifyIdentity.on("init", user => {
