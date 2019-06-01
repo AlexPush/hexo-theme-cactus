@@ -50,4 +50,8 @@
     <% if (theme.rss) { %>
       <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml" />
     <% } %>
+    <!-- Netlify Identity Widget -->
+    <% if (!is_post()) { %>
+			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <% } %>
 </head>
