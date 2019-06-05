@@ -1,7 +1,11 @@
 <section id="about">
-  <% if (config.description) { %>
-    <%- markdown(config.description) %>
-  <% } %>
+	<span class="h1"><%= __('about.title') %></span>
+	<p>
+		<%= __('about.blog_mission') %>
+	</p>
+	<p>
+		<%= __('about.blog_summary') %>
+	</p>
   <% if (theme.social_links) { %>
     <p>
       <%= __('index.find_me_on') %>
