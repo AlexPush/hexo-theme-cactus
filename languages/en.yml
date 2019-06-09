@@ -43,6 +43,9 @@ subscribe:
 	title: Subscribe
 	body: Every two weeks, I ship short snippets along with news I founds insightful, plus any new blog post directly to your doorstep (inbox). Subscribe! It'll help you figure out what's going on now and what will happen next.
 
+otherArticles:
+	title: Other Articles
+
 search:
   search: Search...
   no_results: No results found.

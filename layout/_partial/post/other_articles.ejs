@@ -1,0 +1,21 @@
+<section id="otherArticles">
+	<h2 class="h1">
+		<%= __('otherArticles.title') %>
+	</h2>
+	<ul class="post-list">
+    <% var numberArticles = 3 %>
+    <% site.posts.sort('date', 'desc').limit(numberArticles).each(function(post) { %>
+			<% if (post.title === page.title) { %>
+				<% numberArticles = 4 %>
+			<% } %>
+    <% }); %>
+    <% site.posts.sort('date', 'desc').limit(numberArticles).each(function(post) { %>
+			<% if (post.title !== page.title) { %>
+	      <li class="post-item">
+	        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
+	        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+	      </li>
+			<% } %>
+    <% }); %>
+	</ul>
+</section>
