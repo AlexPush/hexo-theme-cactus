@@ -10,6 +10,9 @@
           <%- partial('_partial/header') %>
         <% } %>
         <%- body %>
+		    <% if (page.title == "subscribe") { %>
+		      <%- partial('_partial/subscribe') %>
+		    <% } %>
         <% if (is_post()) { %>
           <%- partial('_partial/post/actions_mobile') %>
         <% } %>

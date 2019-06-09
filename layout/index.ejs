@@ -31,6 +31,8 @@
   <% } %>
 </section>
 
+<%- partial('_partial/subscribe') %>
+
 <section id="writing">
   <span class="h1"><a href="<%- url_for("blog/") %>"><%= __('index.articles') %></a></span>
   <% if (theme.tags_overview && site.tags.length) { %>

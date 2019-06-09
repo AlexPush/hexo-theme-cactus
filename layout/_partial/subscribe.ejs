@@ -1,0 +1,16 @@
+<section id="subscribe">
+  <% if (!page.title == "subscribe") { %>
+		<span class="h1"><%= __('subscribe.title') %></span>
+  <% } %>
+	<p>
+		<%= __('subscribe.body') %>
+	</p>
+  <form action="https://tinyletter.com/ifigure" method="post" target="popupwindow" id="tlform" onsubmit="window.open('https://tinyletter.com/ifigure', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+		<p>
+			<label for="tlemail">Enter your email address</label>
+			<input type="email" name="email" id="tlemail" required/>
+			<input type="hidden" value="1" name="embed"/>
+			<button type="submit">Join Now</button>
+		</p>
+	</form>
+</section>

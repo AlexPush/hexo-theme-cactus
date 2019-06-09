@@ -1,6 +1,7 @@
 nav:
   home: Home
   about: About
+	Articles: Article Overview
   articles: Articles
 	subscribe: Subscribe
   tag: Tag
@@ -37,6 +38,10 @@ post:
     toc: TOC
     back_to_top: Top
     share: Share
+
+subscribe:
+	title: Subscribe
+	body: Every two weeks, I ship short snippets along with news I founds insightful, plus any new blog post directly to your doorstep (inbox). Subscribe! It'll help you figure out what's going on now and what will happen next.
 
 search:
   search: Search...
