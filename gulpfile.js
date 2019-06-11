@@ -31,12 +31,14 @@ gulp.task('lib:mesloFont', function () {
     .pipe(gulp.dest('./source/lib/meslo-LG'));
 });
 
-gulp.task('lib:vazirFont',function(){
+/* removed that task, as this font is only used for rtl
+ gulp.task('lib:vazirFont',function(){
   return gulp.src([
     'node_modules/vazir-font/dist/*',
   ], {base: 'node_modules/vazir-font/dist'})
     .pipe(gulp.dest('./source/lib/vazir-font'))
 })
+*/
 
 gulp.task('lib:justifiedGallery',function(){
   return gulp.src([
