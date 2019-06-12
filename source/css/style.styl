@@ -193,3 +193,39 @@ code
 
   .line
     height: 22px
+
+// Custom Ifigure
+
+button
+  cursor: pointer
+
+#subscribe
+
+  form
+    display: flex
+
+    input
+       box-sizing: border-box;
+       width: 100%;
+       @extend .p1
+       font-size: 1.333rem
+
+     button
+       flex-grow: 1
+       @extend .py1
+       @extend .px2
+       font-family: $font-family-headline
+       font-size: 1.333rem
+       background: $color-meta
+       color: $color-text
+       border: none
+       height: 100%
+       &:hover
+         background: lighten($color-meta, 20%)
+
+  .container
+    flex-grow: 0.46;
+    @extend .mr1
+
+  label
+    @extend .hide-element
