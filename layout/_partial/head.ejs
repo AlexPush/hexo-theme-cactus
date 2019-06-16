@@ -35,6 +35,12 @@
           <% } %>
         <% } %>
     <% } %>
+    <!-- robots -->
+    <% if (page.archive) { %>
+      <meta name="robots" content="noindex" />
+    <% } else { %>
+      <meta name="robots" content="all" />
+    <% } %>
     <!-- title -->
     <% if (!is_post() && is_home()) { %>
 	    <title><%= __('about.blog_subtitle') %> | <%= config.title %></title>
