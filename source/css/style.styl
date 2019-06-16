@@ -201,31 +201,34 @@ button
 
 #subscribe
 
+  input, button
+    border: none
+    &:focus
+      outline: none
+
   form
     display: flex
+    grid-column: 2
 
     input
-       box-sizing: border-box;
-       width: 100%;
+       box-sizing: border-box
+       flex-grow: 1
+       @extend .mr1
        @extend .p1
-       font-size: 1.333rem
+       font-size: 1 rem
+       @media (min-width: 540px)
+         font-size: 1.333rem
+         flex-grow: 0.46
 
      button
-       flex-grow: 1
        @extend .py1
        @extend .px2
        font-family: $font-family-headline
        font-size: 1.333rem
        background: $color-meta
        color: $color-text
-       border: none
-       height: 100%
        &:hover
          background: lighten($color-meta, 20%)
-
-  .container
-    flex-grow: 0.46;
-    @extend .mr1
 
   label
     @extend .hide-element
