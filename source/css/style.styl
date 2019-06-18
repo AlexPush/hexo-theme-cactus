@@ -56,6 +56,7 @@ body
 
     &:hover
       background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link)
+      color: $color-link
 
   a.icon
     background: none
@@ -214,6 +215,7 @@ button
     input
        box-sizing: border-box
        border-radius: 0
+       color: $color-black
        -webkit-appearance: none
        -webkit-border-radius:0px;
        flex-grow: 1
@@ -229,10 +231,10 @@ button
        @extend .px2
        font-family: $font-family-headline
        font-size: 1.333rem
-       background: $color-meta
-       color: $color-text
+       background: $color-accent-3
+       color: $color-black
        &:hover
-         background: lighten($color-meta, 20%)
+         background: lighten($color-accent-3, 25%)
 
   label
     @extend .hide-element

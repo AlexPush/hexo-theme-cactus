@@ -47,10 +47,12 @@
 
       a
         margin-right: 15px
-        color: $color-accent-1
+        color: $color-text
+        underline(5px, $color-text)
 
       a:hover
-        underline(5px, $color-accent-1)
+        underline(5px, $color-link)
+        color: $color-link
 
       li
         display: inline-block
@@ -60,6 +62,9 @@
 
       .icon
         display: none
+
+        a
+          background-image: none
 
       li:last-child
         margin-right: 0
