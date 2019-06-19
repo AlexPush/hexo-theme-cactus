@@ -2,7 +2,7 @@
   <header>
     <%- partial('_partial/post/logo') %>
     <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
-    <div class="meta">
+    <div class="meta hide-element">
       <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
       by
 			<span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -19,7 +19,7 @@
 	<div class="featureImage">
     <img itemprop="thumbnail" src="<%- page.thumbnail %>" />
 	</div>
-  <div class="content" itemprop="articleBody">
+  <div itemprop="articleBody">
     <%- page.content %>
   </div>
 	<%- partial('_partial/subscribe') %>
