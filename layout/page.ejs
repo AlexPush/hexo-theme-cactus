@@ -1,7 +1,7 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <%- partial('_partial/post/gallery') %>
 	<h1><%= __('nav.' + page.title) %></h1>
-  <div class="content" itemprop="articleBody">
+  <div itemprop="articleBody">
       <% if (page.search || page.type === "search") { %>
         <%- partial('_partial/search') %>
       <% } else if (page.type === "tags") { %>
