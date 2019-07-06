@@ -73,9 +73,10 @@ post:
 #   - gravatar: whether to use your Gravatar as the logo
 logo:
   enabled: true
-  width: 50
-  height: 50
-  url: /images/logo.png
+  width: 60
+  height: 60
+  url: /images/ifigure_logo_open.svg
+  hover-url: /images/ifigure_logo_closed.svg
   gravatar: false
 
 # Customize the favicons.
