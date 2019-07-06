@@ -5,7 +5,7 @@
     <div class="meta hide-element">
       <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
       by
-			<span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name"><% if (config.author) { %><%- config.author %><% } else { %><%- config.title %><% } %></span>
       </span>
       <%- partial('_partial/post/category') %>
@@ -13,16 +13,16 @@
     </div>
   </header>
   <%- partial('_partial/post/gallery') %>
-	<div class="featureText">
-		<%- page.featureText %>
-	</div>
-	<div class="featureImage">
+  <div class="featureText">
+    <%- page.featureText %>
+  </div>
+  <div class="featureImage">
     <img itemprop="thumbnail" src="<%- page.thumbnail %>" />
-	</div>
+  </div>
   <div itemprop="articleBody">
     <%- page.content %>
   </div>
-	<%- partial('_partial/subscribe') %>
-	<%- partial('_partial/post/other_articles') %>
+  <%- partial('_partial/subscribe') %>
+  <%- partial('_partial/post/other_articles') %>
 </article>
 <%- partial('_partial/comments') %>
