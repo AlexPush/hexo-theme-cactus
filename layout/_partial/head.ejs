@@ -13,6 +13,7 @@
         description:    page.metaDescription
     }) %>
     <%- meta(page) %>
+    <link rel="canonical" href="<%= page_url(url) %>">
     <% if (theme.favicon) { %>
         <% if (theme.favicon.desktop) { %>
           <% if (theme.gravatar && theme.gravatar.email && theme.favicon.desktop.gravatar) { %>
