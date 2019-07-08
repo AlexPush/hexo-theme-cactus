@@ -20,7 +20,7 @@
     text-decoration: none
 
   #logo
-    background-image: url($logo-url)
+    bkg-img-transition($logo-url, $logo-hover-url, 1.2s)
     display: inline-block
     float: left
     margin-right: 20px
@@ -71,10 +71,6 @@
 
         a
           margin-right: 0
-
-#header:hover
-  #logo
-    background-image: url($logo-hover-url)
 
 @media screen and (max-width: 480px)
   #header #title

@@ -20,3 +20,30 @@ no-select()
   -o-user-select: none
   -moz-user-select: none
   -webkit-user-select: none
+
+bkg-img-transition($bkg1, $bkg2, $transTime)
+  position: relative
+  z-index: 100
+
+  &:before, &:after
+    background-size: cover
+    content: ''
+    display: block
+    height: 100%
+    position: absolute
+    top: 0; left: 0
+    width: 100%
+    transition: opacity $transTime
+
+  &:before
+    z-index: -101
+    background-image: url($bkg1)
+
+  &:after
+    z-index: -100
+    opacity: 0
+    background-image: url($bkg2)
+
+  &:hover
+     &:after
+       opacity: 1
