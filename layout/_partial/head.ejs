@@ -19,14 +19,14 @@
           <% if (theme.gravatar && theme.gravatar.email && theme.favicon.desktop.gravatar) { %>
               <link rel="shortcut icon" href="<%= gravatar(theme.gravatar.email, 16) %>">
           <% } else { %>
-              <link rel="shortcut icon" href="<%= url_for(theme.favicon.desktop.url) %>">
+              <link rel="icon" href="<%= url_for(theme.favicon.desktop.url) %>">
           <% } %>
         <% } %>
         <% if (theme.favicon.android) { %>
           <% if (theme.gravatar && theme.gravatar.email && theme.favicon.android.gravatar) { %>
             <link rel="icon" type="image/png" href="<%= gravatar(theme.gravatar.email, 192) %>" sizes="192x192">
           <% } else { %>
-            <link rel="icon" type="image/png" href="<%= url_for(theme.favicon.android.url) %>" sizes="192x192">
+            <link rel="icon" sizes="192x192" type="image/png" href="<%= url_for(theme.favicon.android.url) %>">
           <% } %>
         <% } %>
         <% if (theme.favicon.apple) { %>
@@ -37,6 +37,14 @@
           <% } %>
         <% } %>
     <% } %>
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= url_for(theme.favicon.icon16.url) %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= url_for(theme.favicon.icon32.url) %>">
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="apple-mobile-web-app-title" content="<%= config.title %>" />
+    <meta name="application-name" content="<%= config.title %>" />
+    <meta name="theme-color" content="#08327d" />
+    <meta name="msapplication-TileColor" content="#08327d">
     <!-- robots -->
     <% if (page.archive) { %>
       <meta name="robots" content="noindex" />

@@ -90,14 +90,18 @@ logo:
 #   - gravatar: whether to create a favicon from your Gravatar
 favicon:
   desktop:
-    url: /images/favicon.ico
+    url: /favicon.ico
     gravatar: false
   android:
-    url: /images/favicon-192x192.png
+    url: /images/android-chrome-192x192.png
     gravatar: false
   apple:
     url: /images/apple-touch-icon.png
     gravatar: false
+  icon16:
+    url: /images/favicon-16x16.png
+  icon32:
+    url: /images/favicon-32x32.png
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
