@@ -22,6 +22,7 @@ gulp.task('lib:fontAwesome',function(){
     .pipe(gulp.dest('./source/lib/font-awesome'))
 })
 
+/* removed that task, as this font is not used any longer
 gulp.task('lib:mesloFont', function () {
   return download('https://github.com/andreberg/Meslo-Font/blob/master/dist/v1.2/Meslo%20LG%20v1.2.zip?raw=true')
     .pipe(decompress({
@@ -30,6 +31,7 @@ gulp.task('lib:mesloFont', function () {
     }))
     .pipe(gulp.dest('./source/lib/meslo-LG'));
 });
+*/
 
 /* removed that task, as this font is only used for rtl
  gulp.task('lib:vazirFont',function(){
