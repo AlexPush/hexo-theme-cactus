@@ -53,11 +53,11 @@
     <% } %>
     <!-- title -->
     <% if (!is_post() && is_home()) { %>
-	    <title><%= __('about.blog_subtitle') %> | <%= config.title %></title>
-		<% } else if (!is_post()) { %>
-	    <title><%= __('nav.' + page_title()) %> | <%= config.title %></title>
-		<% } else { %>
-	    <title><%= page_title() %> | <%= config.title %></title>
+      <title><%= __('about.blog_subtitle') %> | <%= config.title %></title>
+    <% } else if (!is_post()) { %>
+      <title><%= __('nav.' + page_title()) %> | <%= config.title %></title>
+    <% } else { %>
+      <title><%= page_title() %> | <%= config.title %></title>
     <% } %>
     <!-- styles -->
     <%- css('css/style') %>
@@ -74,6 +74,6 @@
     <% } %>
     <!-- Netlify Identity Widget -->
     <% if (is_home()) { %>
-			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <% } %>
 </head>
