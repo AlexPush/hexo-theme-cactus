@@ -12,6 +12,10 @@
         google_plus:    theme.open_graph.google_plus,
         description:    page.metaDescription
     }) %>
+    <% if (!is_post()) { %>
+      <meta property="og:image" content="<%= url_for(theme.favicon.android.url) %>">
+      <meta name="twitter:image" content="<%= url_for(theme.favicon.android.url) %>">
+    <% } %>
     <%- meta(page) %>
     <link rel="canonical" href="<%= page_url(url) %>">
     <% if (theme.favicon) { %>
