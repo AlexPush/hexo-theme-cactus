@@ -13,8 +13,8 @@
         description:    page.metaDescription
     }) %>
     <% if (!is_post()) { %>
-      <meta property="og:image" content="<%= url_for(theme.favicon.android.url) %>">
-      <meta name="twitter:image" content="<%= url_for(theme.favicon.android.url) %>">
+      <meta property="og:image" content="<%= theme.favicon.post_social_image %>">
+      <meta name="twitter:image" content="<%= theme.favicon.post_social_image %>">
     <% } %>
     <%- meta(page) %>
     <link rel="canonical" href="<%= page_url(url) %>">
@@ -70,12 +70,7 @@
       <%- css('css/rtl') %>
     <% } %>
     <!-- rss -->
-    <% if (theme.rss === '' && config.feed && config.feed.path) { %>
-      <% theme.rss = config.feed.path %>
-    <% } %>
-    <% if (theme.rss) { %>
-      <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml" />
-    <% } %>
+    <link rel="alternate" href="<%= config.url + '/atom.xml' %>" title="<%= config.title %>" type="application/atom+xml" />
     <!-- Netlify Identity Widget -->
     <% if (is_home()) { %>
       <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

@@ -102,6 +102,7 @@ favicon:
     url: /images/favicon-16x16.png
   icon32:
     url: /images/favicon-32x32.png
+  post_social_image: https://res.cloudinary.com/dxrg6ryex/image/upload/v1578768051/ifigured-de_logo_close_circle_vybkff.png
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
