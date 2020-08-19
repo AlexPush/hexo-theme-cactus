@@ -59,6 +59,7 @@
   <% if (theme.posts_overview.show_all_posts) { %>
     <%- partial('_partial/pagination') %>
   <% } %>
+  <p>&gt; <a href="/blog/"><%= __('index.all_posts') %></a></p>
 </section>
 
 <% if (site.data.projects) { %>

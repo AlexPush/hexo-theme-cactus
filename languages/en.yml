@@ -22,10 +22,11 @@ index:
   find_me_on: Find me on
   enum_comma: ','
   enum_and: and
-  articles: Writing
+  articles: Latest Writing
   projects: Projects
   topics: Topics
   most_recent: Most recent
+  all_posts: All posts since 2011
 
 post:
   desktop:
