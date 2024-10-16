@@ -2,10 +2,11 @@
 	<% if (page.title !== "subscribe") { %>
 		<span class="h1"><%= __('subscribe.title') %></span>
 	<% } %>
+	<!-- Subscriotion is deactivated
 	<p>
 		<%= __('subscribe.body') %>
 	</p>
-	<!-- ToDo: Add the new subscription form here
+	 ToDo: Add the new subscription form here
 <form action="https://tinyletter.com/ifigure" method="post" target="popupwindow" id="tlform" onsubmit="window.open('https://tinyletter.com/ifigure', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
 		<label for="tlemail">Enter your email address</label>
 		<input type="email" name="email" id="tlemail" placeholder="example@domain.com" required/>
@@ -14,7 +15,7 @@
 	</form>
 -->
 	<% if (page.title == "subscribe") { %>
-		<h2><%= __('subscribe.feed_headline') %></h2>
+		<!--<h2><%= __('subscribe.feed_headline') %></h2>-->
 		<p>
 			<%- __('subscribe.feed_body') %>
 		</p>
