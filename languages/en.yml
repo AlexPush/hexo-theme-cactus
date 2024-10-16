@@ -44,7 +44,7 @@ subscribe:
 	title: Subscribe to the Feed
 	body: Every 1-2 months, I ship short snippets along with news I found insightful, plus any new essay directly to your doorstep (inbox). Subscribe! It will help you figure out what's going on now and what will happen next.
 	feed_headline: Feed
-	feed_body: Here is the <a href="/atom.xml" title="Atom Feed">Atom feed</a>.
+	feed_body: Please subscribe to the <a href="/atom.xml" title="Atom Feed">Atom feed</a>.
 
 otherArticles:
 	title: Other Articles
